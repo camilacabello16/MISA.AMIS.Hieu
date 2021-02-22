@@ -283,6 +283,7 @@ export default {
                         console.log(response);
                         this.$emit('close-dialog');
                         this.$alert('Thêm thành công', '', 'success');
+                        this.reloadData();
                     }).catch(e=>{
                         this.$alert(e.response.data.userMsg, '', 'error');
                     });

@@ -22,3 +22,15 @@ E:\bdhieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcore
 E:\bdhieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CopyComplete
 E:\bdhieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.dll
 E:\bdhieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.deps.json
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\bin\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\bin\Debug\netcoreapp3.1\MISA.Common.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csprojAssemblyReference.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.AssemblyInfoInputs.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.AssemblyInfo.cs
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CoreCompileInputs.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.csproj.CopyComplete
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.DataLayer\obj\Debug\netcoreapp3.1\MISA.DataLayer.pdb
