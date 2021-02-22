@@ -1,0 +1,115 @@
+.page-left {
+    width: 180px;
+    height: 100vh;
+    border-right: 1px solid #e5e5e5;
+    background-color: #393A3E;
+}
+.menu-logo {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding-left: 20px;
+}
+.menu-logo__icon {
+    width: 30px;
+    height: 30px;
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -428px -85px;
+}
+.menu-logo__img {
+    width: 30px;
+    height: 30px;
+    background-image: url(../content/img/Logo_Module_TiengViet_White.66947422.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.wp-logo-img {
+    display: flex;
+    align-items: center;
+}
+.menu-logo__txt p{
+    color: #fff;
+    font-weight: 500;
+}
+.menu-list__img{
+    width: 18px;
+}
+.menu-list-general{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -33px -1630px;
+	height: 20px;
+}
+.menu-list-cast{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -78px -1631px;
+	height: 18px;
+}
+.menu-list-cast-send{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -121px -1633px;
+	height: 16px;
+}
+.menu-list-buy{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -165px -1632px;
+	height: 18px;
+}
+.menu-list-sale{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -206px -1631px;
+	height: 18px;
+}
+.menu-list-bill{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -254px -1632px;
+	height: 17px;
+}
+.menu-list-storage{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -294px -1632px;
+	height: 17px;
+}
+.menu-list-tool{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -339px -1633px;
+	height: 17px;
+}
+.menu-list-asset{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -382px -1632px;
+	height: 18px;
+}
+.menu-list-tax{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -427px -1634px;
+	height: 16px;
+}
+.menu-list-price{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -471px -1633px;
+	height: 17px;
+}
+.menu-list-synthetic{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -514px -1632px;
+	height: 18px;
+}
+.menu-list-budget{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -382px -1664px;
+	height: 16px;
+}
+.menu-list-report{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -552px -1636px;
+	height: 13px;
+}
+.menu-list-finance{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -207px -1667px;
+	height: 14px;
+}
+.wp-menu {
+    margin-top: 15px;
+}
+.menu-list__txt{
+    color: #fff;
+    margin-left: 12px;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu-list:hover{
+    background-color: #454545;
+    transition: 0.3s;
+}

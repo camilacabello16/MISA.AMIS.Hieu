@@ -1,0 +1,248 @@
+.wp-dialog-employee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 2;
+}
+.dialog-help-icon{
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -89px -145px;
+	width: 22px;
+	height: 22px;
+    cursor: pointer;
+}
+.dialog-help-close {
+    background: url(../content/img/Sprites.64af8f61.svg) no-repeat -147px -147px;
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 7px;
+}
+.dialog-employee {
+    position: absolute;
+    background-color: #fff;
+    width: 800px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+.wp-dialog-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
+.dialog-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.dialog-header__txt{
+    font-family: 'Notosan-bold';
+    font-size: 20px;
+}
+.check-info {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.check-info input {
+    margin-right: 10px;
+}
+.dialog-body {
+    padding: 0 30px;
+}
+.body-top {
+    display: flex;
+    justify-content: space-between;
+}
+.body-top__left {
+    width: 48.5%;
+}
+.wp-inp-code-name {
+    display: flex;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+}
+.inp-code {
+    width: 115px;
+}
+.inp-name {
+    flex: 1;
+    margin-left: 10px;
+}
+.wp-inp-birth-gender {
+    display: flex;
+}
+.gender {
+    display: flex;
+}
+.gender-item {
+    display: flex;
+    align-items: center;
+}
+.wp-inp-id {
+    display: flex;
+    align-items: center;
+}
+.inp-id {
+    width: 60%;
+}
+.inp-realease-day {
+    flex: 1;
+    margin-left: 6px;
+}
+.require-blank{
+    color: red;
+}
+.inp input {
+    padding: 5px 10px;
+    outline-color: #2C9F1C;
+    border: 1px solid #bbb;
+}
+.inp select {
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+    outline-color: #2C9F1C;
+}
+.inp input[type=date] {
+    padding: 3px 10px;
+    padding-right: 0px;
+    outline-color: #2C9F1C;
+}
+.inp-gender {
+    margin-left: 15px;
+}
+.gender-item {
+    margin-left: -4px;
+    margin-right: 15px;
+}
+.gender-item input {
+    margin-right: 8px;
+}
+.gender-item span {
+    margin-top: 4px;
+}
+.menu-dialog-tab {
+    display: flex;
+    align-items: center;
+}
+.menu-dialog-tab__item {
+    border: 1px solid #bbb;
+    padding: 5px;
+    margin-right: 5px;
+}
+.body-bottom {
+    margin-top: 20px;
+}
+.body-bottom-form {
+    width: 97%;
+    border: 1px solid #bbb;
+    padding: 15px 10px;
+    padding-bottom: 60px;
+}
+.wp-phone-email {
+    display: flex;
+}
+.inp-phone {
+    margin-right: 5px;
+}
+.table-bank-info{
+    width: 100%;
+}
+.bank-info {
+    display: flex;
+}
+.bank-info__title {
+    background-color: #EDEEF2;
+    padding: 8px;
+    border: 1px solid #C6C7CA;
+    height: 30px;
+    font-family: 'Notosan-bold';
+}
+.inp-bank{
+    background-color: #F4F5F9;
+    padding: 4px 8px;
+    border: 1px solid #C6C7CA;
+}
+.bank-info-column {
+    width: 23%;
+}
+.bank-info-column-last {
+    flex: 1;
+}
+.bank-info__icon {
+    background: url(../content/img/Sprites.64af8f61.svg) no-repeat -443px -302px;
+    width: 42px;
+    height: 20px;
+    background-color: #EDEEF2;
+    padding: 8px;
+    border: 1px solid #C6C7CA;
+}
+.wp-btn-bank {
+    display: flex;
+    margin-top: 10px;
+}
+.btn-bank {
+    border: 1px solid #959595;
+    border-radius: 4px;
+    padding: 3px 12px;
+    margin-right: 10px;
+    font-family: 'Notosan-bold';
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-bank:hover{
+    background-color: #959595;
+    transition: 0.3s;
+    color: #fff;
+}
+.dialog-footer {
+    padding: 0 30px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+.wp-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bbb;
+    padding-top: 15px;
+}
+.wp-btn-save {
+    display: flex;
+    align-items: center;
+}
+.btn-form {
+    border: 1px solid #979696;
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-family: 'Notosan-semibold';
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-form:hover{
+    background-color: #979696;
+    color: #fff;
+    transition: 0.3s;
+}
+.btn-save {
+    margin-right: 10px;
+}
+.btn-add-form{
+    background-color: #2C9F1C;
+    transition: 0.3s;
+    color: #fff;
+}
+.btn-add-form:hover{
+    background-color: #019160;
+    transition: 0.3s;
+}

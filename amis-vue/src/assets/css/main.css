@@ -1,0 +1,80 @@
+@import url('./content.css');
+@import url('./dialog.css');
+@import url('./menu.css');
+
+@font-face {
+    font-family: 'Notosan-bold';
+    src: url('../content/fonts/notosans-bold.3ede5aff.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Notosan-italic';
+    src: url('../content/fonts/notosans-italic.1c1aaac9.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Notosan-regular';
+    src: url('../content/fonts/notosans-regular.2cb88a13.woff2') format('opentype');
+}
+
+@font-face {
+    font-family: 'Notosan-semibold';
+    src: url('../content/fonts/notosans-semibold.df3e6dc4.woff2') format('opentype');
+}
+
+body{
+	margin: 0;
+	font-family: 'Notosan-regular';
+	font-size: 13px;
+}
+
+.wp-page {
+    display: flex;
+    position: relative;
+}
+
+label{
+    font-family: 'Notosan-bold';
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -128px -312px;
+	width: 16px;
+	height: 16px;
+}
+
+/* input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #bbb;
+} */
+
+input[type='radio']:checked:after {
+    width: 6px;
+    height: 6px;
+    border-radius: 15px;
+    top: -1px;
+    left: 2.5px;
+    position: relative;
+    background-color: #2C9F1C;;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #2C9F1C;
+}
+
+.error{
+    color: #F65454;
+    margin-left: 3px;
+    margin-top: 3px;
+}
