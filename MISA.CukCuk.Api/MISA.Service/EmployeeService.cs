@@ -112,6 +112,48 @@ namespace MISA.Service
             }
             return isValid;
         }
+
+        /// <summary>
+        /// Validate dữ liệu khi cập nhật
+        /// </summary>
+        /// <param name="entity">Dữ liệu truyền vào</param>
+        /// <param name="errorMsg">Câu thông báo</param>
+        /// <returns>true - validate đúng, false - validate sai</returns>
+        /// CreatedBy: BDHIEU (22/02/2021)
+        protected override bool ValidateDataUpdate(Employee employee, ErrorMsg errorMsg = null)
+        {
+            var isValid = true;
+            if (employee.EmployeeCode == "")
+            {
+                errorMsg.devMsg.Add(MISA.Common.Properties.Resources.ErrorService_NullEmployeeCode_dev);
+                errorMsg.userMsg.Add(MISA.Common.Properties.Resources.ErrorService_NullEmployeeCode_user);
+                isValid = false;
+            }
+            var isExist = _employeeRepository.CheckEmployeeCodeUpdateExist(employee);
+            if (isExist == true)
+            {
+                errorMsg.devMsg.Add(MISA.Common.Properties.Resources.ErrorService_DuplicateEmployeeCode_dev);
+                errorMsg.userMsg.Add(MISA.Common.Properties.Resources.ErrorService_DuplicateEmployeeCode_user);
+                isValid = false;
+            }
+            if (employee.FullName == "")
+            {
+                errorMsg.devMsg.Add(MISA.Common.Properties.Resources.ErrorService_NullFullName_dev);
+                errorMsg.userMsg.Add(MISA.Common.Properties.Resources.ErrorService_NullFullName_user);
+                isValid = false;
+            }
+            if (employee.IdentifyNumber != "")
+            {
+                isExist = _employeeRepository.CheckIdNumberUpdateExist(employee);
+                if (isExist == true)
+                {
+                    errorMsg.devMsg.Add(MISA.Common.Properties.Resources.ErrorService_DuplicateIdNumber_dev);
+                    errorMsg.userMsg.Add(MISA.Common.Properties.Resources.ErrorService_DuplicateIdNumber_user);
+                    isValid = false;
+                }
+            }
+            return isValid;
+        }
         #endregion
     }
 }

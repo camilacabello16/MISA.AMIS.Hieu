@@ -2,7 +2,7 @@
     <div class="delete-warning">
         <div class="del-warn">
             <div class="del-warn__icon"></div>
-            <div class="del-warn__txt">Bạn có thực sự muốn xóa Nhân viên này không?</div>
+            <div class="del-warn__txt">Bạn có thực sự muốn xóa Nhân viên {{codeDelete}} không?</div>
         </div>
         <div class="del-warn__btn">
             <div class="btn-form btn-cancel" @click="handleCancelDelete">Không</div>
@@ -21,6 +21,9 @@ export default {
         handleDoDelete: function(){
             this.$emit('do-delete');
         }
+    },
+    props:{
+        codeDelete: String
     }
 }
 </script>

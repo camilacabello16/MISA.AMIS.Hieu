@@ -131,5 +131,41 @@ namespace MISA.DataLayer
             var employees = _dbConnection.Query<Employee>($"SELECT * FROM Employee e WHERE e.DepartmentId = {departmentId} AND e.PositionId = {positionId}", commandType: CommandType.Text);
             return employees;
         }
+
+        /// <summary>
+        /// Kiểm tra số CMTND/ Căn cước nhân viên có tồn tại khi cập nhật hay không
+        /// </summary>
+        /// <param name="phoneNumber">số CMTND/ Căn cước kiểm tra</param>
+        /// <returns>true: tồn tại, false: không tồn tại</returns>
+        /// CreatedBy: BDHIEU (22/02/2021)
+        public bool CheckIdNumberUpdateExist(Employee employee)
+        {
+            _dbConnection = new MySqlConnection(_sqlConnector);
+            var sqlCommand = $"SELECT IdentifyNumber FROM Employee WHERE IdentifyNumber = '{employee.IdentifyNumber}' AND EmployeeId != '{employee.EmployeeId}'";
+            var res = _dbConnection.Query<string>(sqlCommand, commandType: CommandType.Text).FirstOrDefault();
+            if (res != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Kiểm tra mã nhân viên đã tồn tại khi cập nhật hay chưa
+        /// </summary>
+        /// <param name="CustomerCode">Mã nhân viên cần kiểm tra</param>
+        /// <returns>true: tồn tại, false: không tồn tại</returns>
+        /// CreatedBy: BDHIEU (22/02/2021)
+        public bool CheckEmployeeCodeUpdateExist(Employee employee)
+        {
+            _dbConnection = new MySqlConnection(_sqlConnector);
+            var sqlCommand = $"SELECT EmployeeCode FROM Employee WHERE EmployeeCode = '{employee.EmployeeCode}' AND EmployeeId != '{employee.EmployeeId}'";
+            var res = _dbConnection.Query<string>(sqlCommand, commandType: CommandType.Text).FirstOrDefault();
+            if (res != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

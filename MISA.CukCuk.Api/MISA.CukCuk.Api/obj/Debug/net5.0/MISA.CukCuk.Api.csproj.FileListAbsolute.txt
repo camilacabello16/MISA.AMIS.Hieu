@@ -60,3 +60,4 @@ D:\hieu\misatraning\BDHIEU\MISA.CukCuk.Api\MISA.CukCuk.Api\bin\Debug\net5.0\Micr
 D:\hieu\misatraning\BDHIEU\MISA.CukCuk.Api\MISA.CukCuk.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\hieu\misatraning\BDHIEU\MISA.CukCuk.Api\MISA.CukCuk.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\hieu\misatraning\BDHIEU\MISA.CukCuk.Api\MISA.CukCuk.Api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\bdhieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.CukCuk.Api\obj\Debug\net5.0\MISA.CukCuk.Api.pdb

@@ -147,8 +147,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-bank-info" v-if="isOpenBankInfo">
-                        <div class="bank-info">
+                    <div class="form-bank-info" v-if="isOpenBankInfo" id="bankAccount">
+                        <div class="bank-info" v-for="(numberOfAccount, index) in numberOfAccounts" :key="index">
                             <div class="bank-info-column">
                                 <div class="bank-info__title">SỐ TÀI KHOẢN</div>
                                 <div class="inp inp-bank">
@@ -179,8 +179,8 @@
                             </div>
                         </div>
                         <div class="wp-btn-bank">
-                            <div class="btn-bank">Thêm dòng</div>
-                            <div class="btn-bank">Xóa hết dòng</div>
+                            <div class="btn-bank" @click="addBankAccount">Thêm dòng</div>
+                            <div class="btn-bank" @click="removeBankAccount">Xóa hết dòng</div>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,10 @@ export default {
             isOpenBankInfo: false,
             employeeInfo: {},
             departments: [],
-            employeeCodeMax: ''
+            employeeCodeMax: '',
+            numberOfAccounts: 1,
+            bankAccount: [],
+            bankAccountInfo: {}
         }
     },
     validations: {
@@ -270,7 +273,10 @@ export default {
             // thêm mới nhân viên
             if(this.isAdd == true){
                 this.employeeInfo.EmployeeCode = this.$refs.EmployeeCode.value;
-                this.employeeInfo.IdentifyNumber = '';
+                if(this.$refs.IdentifyNumber.value == ''){
+                    console.log(1);
+                    this.employeeInfo.IdentifyNumber = '';
+                }
                 axios.post("https://localhost:44344/api/v1/employee", this.employeeInfo)
                     .then(response => {
                         console.log(response);
@@ -307,6 +313,14 @@ export default {
                         this.$alert(e.response.data.userMsg, '', 'error');
                     });
             }
+        },
+
+        addBankAccount:function(){
+            this.numberOfAccounts += 1;
+        },
+
+        removeBankAccount:function(){
+            this.numberOfAccounts = 0;
         }
     },
     mounted(){

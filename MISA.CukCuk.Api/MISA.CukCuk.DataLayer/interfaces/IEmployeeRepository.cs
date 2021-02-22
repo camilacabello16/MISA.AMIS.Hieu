@@ -70,5 +70,21 @@ namespace MISA.DataLayer.interfaces
         /// <returns>Danh sách nhân viên theo phòng ban và vị trí công việc</returns>
         /// CreatedBy: BDHIEU (10/02/2021)
         IEnumerable<Employee> GetEmployeeByDepartmentAndPosition(int departmentId, int positionId);
+
+        /// <summary>
+        /// Kiểm tra mã nhân viên đã tồn tại khi cập nhật hay chưa
+        /// </summary>
+        /// <param name="CustomerCode">Mã nhân viên cần kiểm tra</param>
+        /// <returns>true: tồn tại, false: không tồn tại</returns>
+        /// CreatedBy: BDHIEU (22/02/2021)
+        bool CheckEmployeeCodeUpdateExist(Employee employee);
+
+        /// <summary>
+        /// Kiểm tra số CMTND/ Căn cước nhân viên có tồn tại khi cập nhật hay không
+        /// </summary>
+        /// <param name="phoneNumber">số CMTND/ Căn cước kiểm tra</param>
+        /// <returns>true: tồn tại, false: không tồn tại</returns>
+        /// CreatedBy: BDHIEU (22/02/2021)
+        bool CheckIdNumberUpdateExist(Employee employee);
     }
 }

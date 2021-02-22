@@ -89,7 +89,7 @@ namespace MISA.Service
             var errorMsg = new ErrorMsg();
 
             // Validate dữ liệu
-            var isValid = true;
+            var isValid = ValidateDataUpdate(entity, errorMsg);
 
             // validate sai thì ko cho thêm
             if (isValid == false)
@@ -115,6 +115,18 @@ namespace MISA.Service
         /// <returns>true - validate đúng, false - validate sai</returns>
         /// CreatedBy: BDHIEU (09/02/2021)
         protected virtual bool ValidateData(T entity, ErrorMsg errorMsg = null)
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// Validate dữ liệu khi cập nhật
+        /// </summary>
+        /// <param name="entity">Dữ liệu truyền vào</param>
+        /// <param name="errorMsg">Câu thông báo</param>
+        /// <returns>true - validate đúng, false - validate sai</returns>
+        /// CreatedBy: BDHIEU (22/02/2021)
+        protected virtual bool ValidateDataUpdate(T entity, ErrorMsg errorMsg = null)
         {
             return true;
         }

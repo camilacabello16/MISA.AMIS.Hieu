@@ -37,11 +37,11 @@
                                 <th>TÊN NGÂN HÀNG</th>
                                 <th>TRẠNG THÁI</th>
                                 <th>CHI NHÁNH</th>
-                                <th>CHỨC NĂNG</th>
+                                <th class="edit-row-head">CHỨC NĂNG</th>
                             </tr>
                         </thead>
                         <tbody class="table-employee__body">
-                            <tr v-for="(employee, index) in employees.data" :key="index">
+                            <tr v-for="(employee, index) in employees.data" :key="index" class="employee-row">
                                 <td>{{employee.EmployeeCode}}</td>
                                 <td class="name-employee">{{employee.FullName}}</td>
                                 <td>{{employee.EmployeeTitle}}</td>
@@ -88,6 +88,7 @@
             v-if="isOpenDeleteForm" 
             @cancel-delete="handleCancelDelete"
             @do-delete="handleDoDelete"
+            :codeDelete="codeDelete"
         />
     </div>
 </template>
@@ -111,7 +112,10 @@ export default {
             idDelete: '',
             isAdd: false,
             searchText: '',
-            itemDelete: null
+            itemDelete: null,
+            employeeDelete: {},
+            employeeList: [],
+            codeDelete: ''
         }
     },
     components: {
@@ -139,12 +143,16 @@ export default {
             var select = document.getElementById('dialog_'+id);
             this.itemDelete = select;
             select.classList.toggle('show-dialog');
-            console.log(this.itemDelete)
         },
 
         // mở cảnh báo xóa
         handleOpenDeleteForm: function(){
             this.idDelete = event.currentTarget.id;
+            for(let i=0;i<this.employeeList.length;i++){
+                if(this.employeeList[i].EmployeeId == event.currentTarget.id){
+                    this.codeDelete = this.employeeList[i].EmployeeCode;
+                }
+            }
             this.isOpenDeleteForm = true;
         },
 
@@ -197,10 +205,12 @@ export default {
             axios.delete('https://localhost:44344/api/v1/employee/' + this.idDelete).then((response) => {
                 console.log(response);
                 this.reloadEmployeeTable(this.activePage, this.offset);
+                this.$alert('Xóa thành công', '', 'success');
             });
             this.isOpenDeleteForm = false;
             this.itemDelete.classList.remove('show-dialog');
             this.itemDelete = null;
+            this.searchText = '';
         },
 
         // load lại component
@@ -211,6 +221,9 @@ export default {
     mounted() {
         axios.get('https://localhost:44344/api/v1/employee-info/paging?positionstart=0&offset='+this.offset).then((response) => {
             this.employees = response;
+        });
+        axios.get('https://localhost:44344/api/v1/employee').then((response) => {
+            this.employeeList = response.data;
         })
     },
     watch: {
@@ -245,5 +258,8 @@ export default {
     }
     .name-employee{
         width: 224px;
+    }
+    .employee-row:hover{
+        background-color: #F8F8F8;
     }
 </style>

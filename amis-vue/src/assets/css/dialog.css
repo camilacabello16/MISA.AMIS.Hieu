@@ -5,7 +5,7 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.4;
     z-index: 2;
 }
 .dialog-help-icon{
@@ -26,9 +26,9 @@
     position: absolute;
     background-color: #fff;
     width: 800px;
-    top: 50px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
     z-index: 4;
 }
 .wp-dialog-icon {
@@ -104,7 +104,7 @@
     color: red;
 }
 .inp input {
-    padding: 5px 10px;
+    padding: 7px 10px;
     outline-color: #2C9F1C;
     border: 1px solid #bbb;
 }
@@ -160,6 +160,7 @@
 }
 .bank-info {
     display: flex;
+    margin-bottom: 7px;
 }
 .bank-info__title {
     background-color: #EDEEF2;
@@ -182,7 +183,7 @@
 .bank-info__icon {
     background: url(../content/img/Sprites.64af8f61.svg) no-repeat -443px -302px;
     width: 42px;
-    height: 20px;
+    height: 23px;
     background-color: #EDEEF2;
     padding: 8px;
     border: 1px solid #C6C7CA;
@@ -228,6 +229,7 @@
     font-family: 'Notosan-semibold';
     cursor: pointer;
     transition: 0.3s;
+    outline: none;
 }
 .btn-form:hover{
     background-color: #979696;

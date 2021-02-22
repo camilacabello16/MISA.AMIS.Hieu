@@ -13,7 +13,7 @@ namespace MISA.CukCuk.Api.Controllers
     [ApiController]
     public class BaseController<T> : ControllerBase
     {
-        #region DECLAE}RE
+        #region DECLARE
         IBaseService<T> _baseService;
         #endregion
 
