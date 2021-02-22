@@ -234,6 +234,7 @@ export default {
         // gửi sự kiện đóng form lên component cha
         handleCloseDialog: function(){
             this.$emit('close-dialog');
+            this.reloadData();
         },
 
         // chuyển sang tab liên hệ trong dialog
