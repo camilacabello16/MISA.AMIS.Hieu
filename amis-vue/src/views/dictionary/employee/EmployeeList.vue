@@ -215,7 +215,9 @@ export default {
 
         // load lại component
         handleReloadComponent:function(){
-            this.reloadEmployeeTable(0, this.offset);
+            var pageUrl = (this.offset * (this.activePage-1));
+            axios.get('https://localhost:44344/api/v1/employee-info/paging?positionstart=' + pageUrl + "&offset=" + this.offset)
+                .then(response => (this.employees = response));
         },
     },
     mounted() {
