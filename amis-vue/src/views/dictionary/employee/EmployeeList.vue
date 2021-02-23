@@ -21,7 +21,8 @@
                     <input 
                         type="text" 
                         placeholder="Tìm theo mã, tên nhân viên" 
-                        v-model="searchText"
+                        ref="SearchText"
+                        @keyup="updateSearchText"
                     />
                     <div class="input-search__icon"></div>
                 </div>
@@ -83,12 +84,19 @@
             @reload-component="handleReloadComponent"
             :employee="employeeInfo"
             :isAdd="isAdd"
+            @error-message="handleShowErrorMessage"
         />
         <DeleteWarning 
             v-if="isOpenDeleteForm" 
             @cancel-delete="handleCancelDelete"
             @do-delete="handleDoDelete"
             :codeDelete="codeDelete"
+        />
+        <ToastMessenger 
+            id="toastMsg" 
+            :toastMsgContent="toastMsgContent"
+            :statusAction="statusAction"
+            :toastMsgError="toastMsgError"
         />
     </div>
 </template>
@@ -97,7 +105,9 @@
 import EmployeeListDetail from './EmployeeListDetail';
 import EmployeeListPagination from './EmployeeListPagination';
 import DeleteWarning from '../../../components/common/DeleteWarning';
+import ToastMessenger from '../../../components/common/ToastMesseger';
 import axios from 'axios';
+//import debounce from 'debounce'
 
 export default {
     name: 'EmployeeList',
@@ -115,13 +125,17 @@ export default {
             itemDelete: null,
             employeeDelete: {},
             employeeList: [],
-            codeDelete: ''
+            codeDelete: '',
+            toastMsgContent: '',
+            statusAction: '',
+            toastMsgError: []
         }
     },
     components: {
         EmployeeListDetail,
         EmployeeListPagination,
-        DeleteWarning
+        DeleteWarning,
+        ToastMessenger
     },
     methods: {
         // mở form thêm, cập nhật nhân viên
@@ -132,9 +146,16 @@ export default {
         },
 
         // đóng form thêm, cập nhật nhân viên
-        handleCloseDialog: function(){
+        handleCloseDialog: function(isSuccess, contentMessenger, status){
             this.isOpenDialog = false;
             this.employeeInfo = {};
+            if(isSuccess == true){
+                this.statusAction = status;
+                this.toastMsgContent = contentMessenger;
+                var toastMsg = document.getElementById('toastMsg');
+                toastMsg.classList.add('show-notice-msg');
+                setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2000);
+            }
         },
 
         // mở, đóng form edit
@@ -205,7 +226,11 @@ export default {
             axios.delete('https://localhost:44344/api/v1/employee/' + this.idDelete).then((response) => {
                 console.log(response);
                 this.reloadEmployeeTable(this.activePage, this.offset);
-                this.$alert('Xóa thành công', '', 'success');
+                this.statusAction = 'success';
+                this.toastMsgContent = 'Xóa nhân viên thành công';
+                var toastMsg = document.getElementById('toastMsg');
+                toastMsg.classList.add('show-notice-msg');
+                setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2000);
             });
             this.isOpenDeleteForm = false;
             this.itemDelete.classList.remove('show-dialog');
@@ -219,6 +244,19 @@ export default {
             axios.get('https://localhost:44344/api/v1/employee-info/paging?positionstart=' + pageUrl + "&offset=" + this.offset)
                 .then(response => (this.employees = response));
         },
+
+        handleShowErrorMessage:function(content, status){
+            this.statusAction = status;
+            this.toastMsgError = content;
+            var toastMsg = document.getElementById('toastMsg');
+            toastMsg.classList.add('show-notice-msg');
+            setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2000);
+        },
+
+        updateSearchText:function(){
+            //this.searchText = this.$refs.SearchText.value, 3000;
+            setTimeout(() => this.searchText = this.$refs.SearchText.value, 700);
+        }
     },
     mounted() {
         axios.get('https://localhost:44344/api/v1/employee-info/paging?positionstart=0&offset='+this.offset).then((response) => {
@@ -226,7 +264,7 @@ export default {
         });
         axios.get('https://localhost:44344/api/v1/employee').then((response) => {
             this.employeeList = response.data;
-        })
+        });
     },
     watch: {
         offset: {
@@ -244,7 +282,13 @@ export default {
         searchText: {
             handler() {
                 axios.get('https://localhost:44344/api/v1/employee-info/search?searchText=' + this.searchText)
-                    .then(response => (this.employees = response));
+                .then(response => {
+                    this.employees = response;
+                });
+                // axios.get('https://localhost:44344/api/v1/employee-info/search?searchText=' + this.searchText)
+                //     .then(response => {
+                //         this.employees = response;
+                //     });
                 if(this.searchText === ""){
                     this.reloadEmployeeTable(this.activePage, this.offset);
                 }

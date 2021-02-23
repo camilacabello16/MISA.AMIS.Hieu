@@ -213,7 +213,8 @@ export default {
             employeeCodeMax: '',
             numberOfAccounts: 1,
             bankAccount: [],
-            bankAccountInfo: {}
+            bankAccountInfo: {},
+            isSuccess: false
         }
     },
     validations: {
@@ -281,21 +282,23 @@ export default {
                 axios.post("https://localhost:44344/api/v1/employee", this.employeeInfo)
                     .then(response => {
                         console.log(response);
-                        this.$emit('close-dialog');
-                        this.$alert('Thêm thành công', '', 'success');
+                        this.isSuccess = true;
+                        this.$emit('close-dialog', this.isSuccess, 'Thêm mới thành công', 'success');
                         this.reloadData();
                     }).catch(e=>{
-                        this.$alert(e.response.data.userMsg, '', 'error');
+                        e.response.data.userMsg.slice(0,2);
+                        this.showErrorMessage(e.response.data.userMsg, 'error');
                     });
             // cập nhật nhân viên
             } else {
                 axios.put("https://localhost:44344/api/v1/employee", this.employeeInfo)
                     .then(response => {
                         console.log(response);
-                        this.$emit('close-dialog');
-                        this.$alert('Cập nhật thành công', '', 'success');
+                        this.isSuccess = true;
+                        this.$emit('close-dialog', this.isSuccess, 'Cập nhật thành công', 'success');
                     }).catch(e=>{
-                        this.$alert(e.response.data.userMsg, '', 'error');
+                        e.response.data.userMsg.slice(0,2);
+                        this.showErrorMessage(e.response.data.userMsg, 'error');
                     });
             }
         },
@@ -309,10 +312,10 @@ export default {
                 axios.put("https://localhost:44344/api/v1/employee", this.employeeInfo)
                     .then(response => {
                         console.log(response);
-                        this.$emit('close-dialog');
-                    this.$alert('Cập nhật thành công', '', 'success');
+                        this.isSuccess = true;
+                        this.$emit('close-dialog', this.isSuccess, 'Cập nhật thành công', 'success');
                     }).catch(e=>{
-                        this.$alert(e.response.data.userMsg, '', 'error');
+                        this.showErrorMessage(e.response.data.userMsg, 'error');
                     });
             }
         },
@@ -323,6 +326,10 @@ export default {
 
         removeBankAccount:function(){
             this.numberOfAccounts = 0;
+        },
+
+        showErrorMessage: function(content, status){
+            this.$emit('error-message', content, status);
         }
     },
     mounted(){
@@ -339,6 +346,7 @@ export default {
         this.employeeInfo = this.employee;
         this.employeeInfo.DateOfBirth = this.formatDateForm(this.employeeInfo.DateOfBirth);
         this.employeeInfo.ReleaseDay = this.formatDateForm(this.employeeInfo.ReleaseDay);
+        this.isSuccess = false;
     },
     filters: {
         IncreaseCode:function(code){
