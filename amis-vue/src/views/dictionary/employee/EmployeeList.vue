@@ -254,8 +254,7 @@ export default {
         },
 
         updateSearchText:function(){
-            //this.searchText = this.$refs.SearchText.value, 3000;
-            setTimeout(() => this.searchText = this.$refs.SearchText.value, 700);
+            setTimeout(() => this.searchText = this.$refs.SearchText.value, 1500);
         }
     },
     mounted() {
@@ -282,13 +281,9 @@ export default {
         searchText: {
             handler() {
                 axios.get('https://localhost:44344/api/v1/employee-info/search?searchText=' + this.searchText)
-                .then(response => {
-                    this.employees = response;
-                });
-                // axios.get('https://localhost:44344/api/v1/employee-info/search?searchText=' + this.searchText)
-                //     .then(response => {
-                //         this.employees = response;
-                //     });
+                    .then(response => {
+                        this.employees = response;
+                    });
                 if(this.searchText === ""){
                     this.reloadEmployeeTable(this.activePage, this.offset);
                 }
@@ -300,10 +295,10 @@ export default {
 
 <style scoped>
     .bank-banch{
-        width: 250px;
+        width: 18%;
     }
     .name-employee{
-        width: 224px;
+        width: 20%;
     }
     .employee-row:hover{
         background-color: #F8F8F8;

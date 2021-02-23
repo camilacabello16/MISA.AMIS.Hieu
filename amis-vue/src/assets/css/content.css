@@ -287,6 +287,7 @@ td, th {
     align-items: center;
     cursor: pointer;
     position: relative;
+    height: 55px;
 }
 .dialog-edit {
     position: absolute;

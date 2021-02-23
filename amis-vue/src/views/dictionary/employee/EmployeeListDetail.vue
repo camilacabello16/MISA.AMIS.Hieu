@@ -116,12 +116,12 @@
             <div class="body-bottom">
                 <div class="menu-dialog-tab">
                     <div 
-                        class="menu-dialog-tab__item" 
+                        class="menu-dialog-tab__item tab-item-address" 
                         @click="handleChooseAddress"  
                         :class="{'active-tab': isOpenAdress}"
                     >Liên hệ</div>
                     <div 
-                        class="menu-dialog-tab__item" 
+                        class="menu-dialog-tab__item tab-item-bank" 
                         @click="handleChooseBankInfo" 
                         :class="{'active-tab': isOpenBankInfo}"
                     >Tài khoản ngân hàng</div>
@@ -368,5 +368,6 @@ export default {
     }
     .active-tab{
         background-color: #C9E4FC;
+        padding: 8px 5px;
     }
 </style>
