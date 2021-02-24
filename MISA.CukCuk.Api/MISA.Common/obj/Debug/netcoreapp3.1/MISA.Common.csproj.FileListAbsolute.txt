@@ -31,3 +31,14 @@ D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\
 D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csproj.CoreCompileInputs.cache
 D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.dll
 D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\bin\Debug\netcoreapp3.1\MISA.Common.deps.json
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\bin\Debug\netcoreapp3.1\MISA.Common.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csprojAssemblyReference.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.Properties.Resources.resources
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csproj.GenerateResource.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.AssemblyInfoInputs.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.AssemblyInfo.cs
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.csproj.CoreCompileInputs.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Common\obj\Debug\netcoreapp3.1\MISA.Common.pdb

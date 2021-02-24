@@ -40,3 +40,17 @@ D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1
 D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csproj.CopyComplete
 D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.dll
 D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Service.deps.json
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Service.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Service.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Common.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.DataLayer.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.Common.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\bin\Debug\netcoreapp3.1\MISA.DataLayer.pdb
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csprojAssemblyReference.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.AssemblyInfoInputs.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.AssemblyInfo.cs
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csproj.CoreCompileInputs.cache
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.csproj.CopyComplete
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.dll
+D:\hieu\AMIS\MISA.AMIS.Hieu\MISA.AMIS.Hieu\MISA.CukCuk.Api\MISA.Service\obj\Debug\netcoreapp3.1\MISA.Service.pdb

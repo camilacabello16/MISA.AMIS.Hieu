@@ -84,8 +84,9 @@
     cursor: pointer;
 }
 .profile-avatar{
-    width: 30px;
-    height: 30px;
+    background: url('../content/img/Sprites.64af8f61.svg') no-repeat -352px -894px;
+	width: 32px;
+	height: 32px;
 }
 .profile-avatar img{
     width: 100%;
@@ -93,9 +94,6 @@
     border-radius: 100px;
 }
 .profile-avatar {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #E5E5E5;
     border-radius: 100px;
 }
 .profile-header{

@@ -21,7 +21,6 @@
             <div class="wp-profile-header">
                 <div class="profile-header">
                     <div class="profile-avatar">
-                        <img src="../../assets/content/img/default-avatar.jpg"/>
                     </div>
                     <div class="profile-name">Bùi Đức Hiếu</div>
                     <div class="profile-icon"></div>
