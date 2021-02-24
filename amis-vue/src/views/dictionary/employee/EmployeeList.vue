@@ -281,13 +281,15 @@ export default {
         },
         searchText: {
             handler() {
+                if(this.searchText == ""){
+                    this.reloadEmployeeTable(this.activePage, this.offset);
+                    return;
+                }
                 axios.get('https://localhost:44344/api/v1/employee-info/search?searchText=' + this.searchText)
                     .then(response => {
                         this.employees = response;
                     });
-                if(this.searchText === ""){
-                    this.reloadEmployeeTable(this.activePage, this.offset);
-                }
+                
             }
         }
     },
