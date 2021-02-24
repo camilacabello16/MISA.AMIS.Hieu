@@ -154,7 +154,7 @@ export default {
                 this.toastMsgContent = contentMessenger;
                 var toastMsg = document.getElementById('toastMsg');
                 toastMsg.classList.add('show-notice-msg');
-                setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2000);
+                setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2800);
             }
         },
 
@@ -230,7 +230,7 @@ export default {
                 this.toastMsgContent = 'Xóa nhân viên thành công';
                 var toastMsg = document.getElementById('toastMsg');
                 toastMsg.classList.add('show-notice-msg');
-                setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2000);
+                setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2800);
             });
             this.isOpenDeleteForm = false;
             this.itemDelete.classList.remove('show-dialog');
@@ -250,11 +250,12 @@ export default {
             this.toastMsgError = content;
             var toastMsg = document.getElementById('toastMsg');
             toastMsg.classList.add('show-notice-msg');
-            setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2000);
+            setTimeout(function(){ toastMsg.classList.remove('show-notice-msg'); }, 2800);
         },
 
         updateSearchText:function(){
             setTimeout(() => this.searchText = this.$refs.SearchText.value, 1500);
+            //this.searchText = this.$refs.SearchText.value;
         }
     },
     mounted() {

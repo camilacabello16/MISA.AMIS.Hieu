@@ -26,7 +26,7 @@ namespace MISA.Common.Models
         /// <summary>
         /// Ngày sinh nhân viên
         /// </summary>
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
         /// <summary>
         /// Giới tính nhân viên
         /// </summary>
@@ -42,7 +42,7 @@ namespace MISA.Common.Models
         /// <summary>
         /// Ngày cấp CMTND/ Căn cước
         /// </summary>
-        public DateTime ReleaseDay { get; set; }
+        public DateTime? ReleaseDay { get; set; }
         /// <summary>
         /// Chức danh nhân viên
         /// </summary>

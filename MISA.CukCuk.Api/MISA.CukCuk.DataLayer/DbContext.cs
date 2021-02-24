@@ -90,6 +90,16 @@ namespace MISA.DataLayer
                 {
                     parameters.Add($"@{propertyName}", propertyValue, DbType.String);
                 }
+                else if (propertyType == typeof(DateTime) || propertyType == typeof(DateTime?))
+                {
+                    string dateTimeString = null;
+                    if (propertyValue != null)
+                    {
+                        var dateTime = (DateTime)propertyValue;
+                        dateTimeString = dateTime.ToString("yyyy-MM-dd hh-mm-ss");
+                    }
+                    parameters.Add($"@{propertyName}", dateTimeString);
+                }
                 else
                 {
                     parameters.Add($"@{propertyName}", propertyValue);

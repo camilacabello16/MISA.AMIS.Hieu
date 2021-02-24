@@ -286,7 +286,6 @@ export default {
                         this.$emit('close-dialog', this.isSuccess, 'Thêm mới thành công', 'success');
                         this.reloadData();
                     }).catch(e=>{
-                        e.response.data.userMsg.slice(0,2);
                         this.showErrorMessage(e.response.data.userMsg, 'error');
                     });
             // cập nhật nhân viên

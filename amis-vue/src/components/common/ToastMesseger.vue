@@ -25,7 +25,7 @@ export default {
         transform: translateX(-50%);
         z-index: 9;
         background-color: #fff;
-        padding: 5px 20px;
+        padding: 5px 30px;
         font-size: 16px;
         font-family: 'Notosan-semibold';
         box-shadow: 0.5px 1px 15px #a5a5a5;
