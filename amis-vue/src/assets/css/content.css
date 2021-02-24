@@ -162,7 +162,7 @@
     background-color: #fff;
     height: 88%;
     padding: 15px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 .input-search__icon {
     background: url(../content/img/Sprites.64af8f61.svg) no-repeat -992px -360px;
@@ -247,7 +247,7 @@ td, th {
     cursor: context-menu;
 }
 .table-employee {
-    height: 93%;
+    height: 88%;
     overflow-y: scroll;
     margin-top: 15px;
 }
@@ -312,6 +312,10 @@ td, th {
 }
 th{
     background-color: #EDEEF2;
+    position: sticky;
+    top: -1px;
+    left: 0;
+    z-index: 1;
 }
 .del-warn__icon{
     background: url('../content/img/Sprites.64af8f61.svg') no-repeat -598px -463px;
@@ -345,4 +349,7 @@ tr th:last-child{
 }
 tr td:last-child{
     border-right: none;
+}
+.table-employee__header{
+    position: relative;
 }
