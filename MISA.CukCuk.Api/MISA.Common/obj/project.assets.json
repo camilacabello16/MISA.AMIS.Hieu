@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\bdhieu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
+      "projectUniqueName": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
       "projectName": "MISA.Common",
-      "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\obj\\",
+      "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
+      "packagesPath": "C:\\Users\\bdhieu\\.nuget\\packages\\",
+      "outputPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bdhieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj": {}
+    "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj": {}
   },
   "projects": {
-    "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj": {
+    "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
+        "projectUniqueName": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
         "projectName": "MISA.Common",
-        "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\obj\\",
+        "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj",
+        "packagesPath": "C:\\Users\\bdhieu\\.nuget\\packages\\",
+        "outputPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bdhieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj": {
+    "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj",
+        "projectUniqueName": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj",
         "projectName": "MISA.DataLayer",
-        "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\obj\\",
+        "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\bdhieu\\.nuget\\packages\\",
+        "outputPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bdhieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj": {
-                "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj"
+              "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj"
               }
             }
           }
@@ -126,21 +126,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj": {
+    "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj",
+        "projectUniqueName": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj",
         "projectName": "MISA.Service",
-        "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\obj\\",
+        "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\MISA.Service.csproj",
+        "packagesPath": "C:\\Users\\bdhieu\\.nuget\\packages\\",
+        "outputPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bdhieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,11 +154,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj": {
-                "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj"
+              "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.Common\\MISA.Common.csproj"
               },
-              "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj": {
-                "projectPath": "D:\\hieu\\AMIS\\MISA.AMIS.Hieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj"
+              "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj": {
+                "projectPath": "E:\\bdhieu\\MISA.AMIS.Hieu\\MISA.CukCuk.Api\\MISA.CukCuk.DataLayer\\MISA.DataLayer.csproj"
               }
             }
           }
@@ -187,7 +187,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
