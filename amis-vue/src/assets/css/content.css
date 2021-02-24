@@ -353,3 +353,12 @@ tr td:last-child{
 .table-employee__header{
     position: relative;
 }
+
+@media (max-width:1400px){
+    .table-employee{
+        height: 93%;
+    }
+    .content-table{
+        padding-bottom: 35px;
+    }
+}
